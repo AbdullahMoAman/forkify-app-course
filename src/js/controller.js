@@ -17,11 +17,6 @@ const recipeContainer = document.querySelector('.recipe');
 // NEW API URL (instead of the one shown in the video)
 // https://forkify-api.jonas.io
 
-// This is a parcel code not js code ----
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 const controlRecipe = async () => {
   try {
     const id = window.location.hash.slice(1);
@@ -37,7 +32,6 @@ const controlRecipe = async () => {
 
     // 2- Loading the recipe by calling fetch API
     await module.loadRecipe(id);
-    // const { recipe } = module.state;
 
     // 3- Rendaring the recipe
     recipeView.render(module.state.recipe);
@@ -83,7 +77,6 @@ const controllServings = newServings => {
   module.updateServings(newServings);
 
   // 2- update the receipe view
-  // recipeView.render(module.state.recipe);
   recipeView.update(module.state.recipe);
 };
 
