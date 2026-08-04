@@ -1,0 +1,22 @@
+{
+  "name": "frokify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "license": "ISC",
+  "author": "Abdullah",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "core-js": "^3.49.0",
+    "fraction.js": "^5.3.4",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.14.1"
+  }
+}
